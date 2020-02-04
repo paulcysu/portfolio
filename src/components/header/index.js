@@ -10,11 +10,17 @@ const Container = styled.div`
     background: gray;
 `;
 
+const Text = styled.div`
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+`;
+
 const Header = (props) => {
     const {title} = props;
     return (
         <Container>
-            {title}
+            <Text>{title}</Text>
         </Container>
     )
 };
