@@ -11,6 +11,7 @@ const reset = css`
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         box-sizing: inherit;
+        font-family: 'Muli', sans-serif;
     }
     *:before,
     *:after {

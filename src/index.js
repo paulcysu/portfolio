@@ -11,12 +11,11 @@ import reset from './constants/css/reset';
 const GlobalStyle = createGlobalStyle`${reset}`;
 
 ReactDOM.render(
-<BrowserRouter>
-  <Provider store={store}>
-    <App />
-    <div>Hello</div>
-  </Provider>
-  <GlobalStyle />
-</BrowserRouter>,
-document.getElementById('root')
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+    <GlobalStyle />
+  </BrowserRouter>,
+  document.getElementById('root')
 );

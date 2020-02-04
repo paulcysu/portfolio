@@ -1,2 +1,2 @@
-# React Boilerplate
-### Webpack, Babel, Eslint, Redux, Jest 
+# Paul Su - Portfolio
+### 
