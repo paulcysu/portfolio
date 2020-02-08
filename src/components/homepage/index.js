@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import Header from "../header";
-import axios from 'axios';
+import WaterRipple from "../water_ripple/WaterRipple";
 
 const Container = styled.div`
+    background: blue
 `;
 
 const HomePage = () => {
@@ -18,7 +19,7 @@ const HomePage = () => {
 
     return (
         <Container>
-            <Header title={user.name}/>
+            <WaterRipple/>
         </Container>
     )
 };
