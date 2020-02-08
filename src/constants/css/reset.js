@@ -11,7 +11,11 @@ const reset = css`
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         box-sizing: inherit;
-        font-family: 'Muli', sans-serif;
+        // font-family: 'Amatic SC', cursive;
+        // font-family: 'Courier Prime', monospace;
+        // font-family: 'Caveat', cursive;
+        // font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     *:before,
     *:after {
