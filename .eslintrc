@@ -16,7 +16,6 @@
     "jest": true
   },
   "rules": {
-    "indent": ["error", 4],
     "space-before-function-paren": "off",
     "react/prefer-stateless-function": "warn",
     "react/jsx-one-expression-per-line": "off",
@@ -36,6 +35,6 @@
         "allowTaggedTemplates": true
       }
     ],
-    "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] }]
+    "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] }],
   }
 }
