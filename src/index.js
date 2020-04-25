@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createGlobalStyle } from 'styled-components';
 
@@ -11,11 +11,11 @@ import reset from './constants/css/reset';
 const GlobalStyle = createGlobalStyle`${reset}`;
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router>
     <Provider store={store}>
       <App />
     </Provider>
     <GlobalStyle />
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root')
 );
