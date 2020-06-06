@@ -8,5 +8,7 @@ module.exports = {
   imagesFolder: 'images',
   fontsFolder: 'fonts',
   cssFolder: 'css',
-  jsFolder: 'js'
+  jsFolder: 'js',
+  components: path.resolve(__dirname, 'src/components/'),
+  common: path.resolve(__dirname, 'src/components/common'),
 };

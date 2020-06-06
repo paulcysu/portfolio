@@ -11,6 +11,8 @@ const Clickable = styled.div`
 
 const PSImage = styled.div`
     font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
 `;
 
 const PSLogo = (props) => {
@@ -18,7 +20,7 @@ const PSLogo = (props) => {
     return (
         <Clickable>
             <Link to={route}>
-                <PSImage />
+                <PSImage>Paul Su</PSImage>
             </Link>
         </Clickable>
     )

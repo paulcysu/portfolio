@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import styled from 'styled-components';
+import Logo from '../Logo/Logo';
 
 const Container = styled.div`
     display: flex;
@@ -10,27 +11,24 @@ const Container = styled.div`
     background: gray;
 `;
 
-const Text = styled.div`
-    color: #FFF;
-    font-size: 1.5rem;
-    font-weight: 700;
-`;
+// const Text = styled.div`
+//     color: #FFF;
+//     font-size: 1.5rem;
+//     font-weight: 700;
+// `;
 
-const Header = (props) => {
-    const {title} = props;
+const Navigation = (props) => {
     return (
         <Container>
-            <Text>{title}</Text>
+            <Logo route="/"/>
         </Container>
     )
 };
 
-Header.defaultProps = {
-    title: ''
+Navigation.defaultProps = {
 };
 
-Header.propTypes = {
-    title: PropTypes.string
+Navigation.propTypes = {
 };
 
-export default Header;
+export default Navigation;
