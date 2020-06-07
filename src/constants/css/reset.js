@@ -16,6 +16,7 @@ const reset = css`
         // font-family: 'Caveat', cursive;
         // font-family: 'Open Sans', sans-serif;
         font-family: 'Montserrat', sans-serif;
+        // font-family: 'Poppins', sans-serif;
     }
     *:before,
     *:after {
@@ -107,6 +108,7 @@ const reset = css`
     }
     body {
         box-sizing: border-box;
+        background: #222;
     }
 `;
 

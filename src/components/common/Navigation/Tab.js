@@ -1,10 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
+import {StyledTab} from './styles';
 
 const Tab = ({label, route}) => {
     return (
-        <Link to={route}>{label}</Link>
+        <StyledTab to={route}>{label}</StyledTab>
     )
 };
 

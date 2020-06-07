@@ -1,17 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {Title} from './styles'
 
-const StyledLink = styled(
-    styled(Link)`
-        &:hover {
-            cursor: pointer;
-        }
-    `
-)
-
-const PSLogo = () => {
+const Logo = () => {
     return (
         <Link to='/'>
             <Title>Paul Su</Title>
@@ -19,4 +10,4 @@ const PSLogo = () => {
     )
 }
 
-export default PSLogo;
+export default Logo;

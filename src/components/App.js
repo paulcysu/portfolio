@@ -1,17 +1,16 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
-import Home from 'components/Home/Home.js';
+import AboutMe from 'components/AboutMe/AboutMe.js';
+import Navigation from './common/Navigation/Navigation';
 
 const App = () => (
+    <>
+    <Navigation/>
     <Switch>
-        <Route path="/" exact>
-            <Home />
-        </Route>
-        <Route path="/test" exact>
-            <div>test</div>
-        </Route>
+        <Route path="/" exact component={AboutMe}/>
+        <Route component={AboutMe}/>
     </Switch>
+    </>
 );
 
 export default App;
