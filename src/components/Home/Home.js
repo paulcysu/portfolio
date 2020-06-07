@@ -9,7 +9,7 @@ const Layout = styled.div`
     background-color: #222;
 `;
 
-const Title = styled.div`
+const Title = styled.h1`
     color: #fff;
     font-size: 4rem;
 `;
@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <Layout>
             <Navigation/>
-            <Title>Full Stack Web </Title>
+            <Title>Full Stack Web Hello </Title>
         </Layout>
     )
 };
