@@ -1,7 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import AboutMe from 'components/AboutMe/AboutMe.js';
-import Navigation from './common/Navigation/Navigation';
+import AboutMe from 'components/AboutMe/AboutMe';
+import Navigation from 'components/common/Navigation/Navigation';
+import Footer from 'components/common/Footer/Footer';
 
 const App = () => (
     <>
@@ -10,6 +11,7 @@ const App = () => (
         <Route path="/" exact component={AboutMe}/>
         <Route component={AboutMe}/>
     </Switch>
+    <Footer/>
     </>
 );
 
