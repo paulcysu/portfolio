@@ -44,13 +44,9 @@ const ChangingTextAnimation = ({texts}) => {
     }
 
     return (
-        <Text>
+        <Text fade={displayText.index % 2 === 0}>
             {
-                displayText 
-                && displayText.text 
-                && displayText.text.split().map(letter => 
-                    <Letter className='letter' key={letter + '-' + displayText.index + '-letter-key'}>{letter}</Letter>
-                )
+                displayText && displayText.text 
             }
         </Text>
     )
