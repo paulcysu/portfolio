@@ -4,12 +4,12 @@ export const Container = styled.div`
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 5% 15%;
+    padding: 8% 12%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     @media (max-width: 1200px) {
-        padding: 5% 10%;
+        padding: 8% 10%;
         flex-direction: column-reverse;
     }
 `;

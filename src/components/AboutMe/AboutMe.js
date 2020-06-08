@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+import ChangingTextAnimation  from 'components/common/ChangingTextAnimation/ChangingTextAnimation';
 import { 
     CircleImage,
     Container, 
@@ -6,13 +7,14 @@ import {
 } from './styles';
 
 const AboutMe = () => {
-    useEffect(async () => {
-
-    });
+    const languages = ['React', 'PHP', 'Javascript', 'Laravel', 'Node', 'Python'];
 
     return (
         <Container>
-            <Title>Full Stack Web</Title>
+            <div>
+                <Title>Full Stack Web Developer</Title>
+                <ChangingTextAnimation texts={languages}/>
+            </div>
             <CircleImage src='https://picsum.photos/500/500' alt="Paul's face"/>
         </Container>
     )
