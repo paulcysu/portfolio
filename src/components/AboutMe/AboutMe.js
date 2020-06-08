@@ -15,7 +15,10 @@ const AboutMe = () => {
                 <Title>Full Stack Web Developer</Title>
                 <ChangingTextAnimation texts={languages}/>
             </div>
-            <CircleImage src='https://picsum.photos/500/500' alt="Paul's face"/>
+            <CircleImage 
+                src='https://picsum.photos/500/500' 
+                alt="Paul's face"
+            />
         </Container>
     )
 };
