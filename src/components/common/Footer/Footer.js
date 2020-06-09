@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <ContactContainer>
                 <StyledLink to='/contact'>Paul Su</StyledLink>
-                <StyledLink to='/contact'>su.paul.cy@gmail.com</StyledLink>
+                <StyledLink to='/contact'>{process.env.email}</StyledLink>
             </ContactContainer>
         </Container>
     )
