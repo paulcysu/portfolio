@@ -2,7 +2,8 @@ import React from 'react';
 import ChangingTextAnimation  from 'components/common/ChangingTextAnimation/ChangingTextAnimation';
 import { 
     CircleImage,
-    Container, 
+    Container,
+    Header, 
     Title,  
 } from './styles';
 
@@ -11,14 +12,16 @@ const AboutMe = () => {
 
     return (
         <Container>
-            <div>
-                <Title>Full Stack Web Developer</Title>
-                <ChangingTextAnimation texts={languages}/>
-            </div>
-            <CircleImage 
-                src='https://picsum.photos/500/500' 
-                alt="Paul's face"
-            />
+            <Header>
+                <div>
+                    <Title>Full Stack Web Developer</Title>
+                    <ChangingTextAnimation texts={languages}/>
+                </div>
+                <CircleImage 
+                    src='https://picsum.photos/500/500' 
+                    alt="Paul's face"
+                />
+            </Header>
         </Container>
     )
 };

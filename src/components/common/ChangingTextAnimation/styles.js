@@ -9,4 +9,7 @@ export const Text = styled.div`
     -ms-transition: opacity 3s ease-in-out;
     -o-transition: opacity 3s ease-in-out;
     opacity: ${(props) => props.fade ? "0" : "0.7"};
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 `;

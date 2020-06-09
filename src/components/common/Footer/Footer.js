@@ -3,6 +3,7 @@ import {
     Container,
     StyledLink,
     StyledA,
+    ContactContainer,
 } from './styles';
 
 const Footer = () => {
@@ -18,10 +19,10 @@ const Footer = () => {
                     socialMedias.map(media => <StyledA href={media.route}>{media.label}</StyledA>)
                 }
             </div>
-            <div>
+            <ContactContainer>
                 <StyledLink to='/contact'>Paul Su</StyledLink>
                 <StyledLink to='/contact'>su.paul.cy@gmail.com</StyledLink>
-            </div>
+            </ContactContainer>
         </Container>
     )
 };

@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const Container = styled.div`
-    position: absolute;
-    bottom: 0;
     border-top: 1px solid dimgray;
     width: 100%;
     max-width: 100%;
@@ -11,6 +9,10 @@ export const Container = styled.div`
     padding: 15px 50px;
     display: flex;
     justify-content: space-between;
+    @media (min-width: 768px) {
+        position: absolute;
+        bottom: 0;
+    }
 `;
 
 export const StyledLink = styled(Link)`
@@ -45,5 +47,11 @@ export const StyledA = styled.a`
     :hover {
         color: #fff;
         cursor: pointer;
+    }
+`;
+
+export const ContactContainer = styled.div`
+    @media (max-width: 800px) {
+        display: none;
     }
 `;
