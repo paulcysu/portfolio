@@ -27,4 +27,24 @@ export const SectionTitle = styled.div`
     color: #fff;
     font-size: 1.5rem;
     font-weight: 700;
+    margin-bottom: 20px;
+`;
+
+export const Card = styled.div`
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px -8px rgba(0,0,0,.78);
+    border: 1px solid dimgray;
+    padding: 20px;
+    color: #fff;
+`;
+
+export const BoldText = styled.div`
+    color: #fff;
+    font-weight: 700;
+`;
+
+export const SpaceBetweenContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
 `;

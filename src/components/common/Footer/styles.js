@@ -10,7 +10,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     @media (min-width: 768px) {
-        position: absolute;
+        position: ${props => props.absolute ? 'absolute' : 'unset'};
         bottom: 0;
     }
 `;

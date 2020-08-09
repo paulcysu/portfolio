@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {withRouter} from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 import { 
     Container,
     StyledLink,
@@ -6,14 +9,24 @@ import {
     ContactContainer,
 } from './styles';
 
-const Footer = () => {
+const Footer = ({location}) => {
+    const [absoluteFooter, setAbsoluteFooter] = useState(true);
+
+    useEffect(() => {
+        if (location.pathname !== '/') {
+            setAbsoluteFooter(false);
+        } else {
+            setAbsoluteFooter(true);
+        }
+    })
+
     const socialMedias = [
         {label: 'Linkenin', route: 'https://www.linkedin.com/in/paulcysu/'},
         {label: 'GitHub', route: 'https://github.com/paulcysu'}
     ];
 
     return (
-        <Container>
+        <Container absolute={absoluteFooter}>
             <div>
                 {
                     socialMedias.map(media => <StyledA href={media.route}>{media.label}</StyledA>)
@@ -27,4 +40,14 @@ const Footer = () => {
     )
 };
 
-export default Footer;
+Footer.defaultProps = {
+    location: {},
+};
+
+Footer.propTypes = {
+    location: PropTypes.objectOf(
+        PropTypes.string
+    )
+};
+
+export default withRouter(Footer);
